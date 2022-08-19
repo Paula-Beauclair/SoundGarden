@@ -30,7 +30,7 @@ formCadastroEvento.addEventListener('submit', async (event) => {
         method: "POST",
         mode: "cors",
         headers: {
-            "Content-Type" : "aplication/json",
+            "Content-Type" : "application/json",
        },
         body: novoEventoJSON
     }).then((response) => {
