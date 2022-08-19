@@ -28,8 +28,9 @@ formCadastroEvento.addEventListener('submit', async (event) => {
 
    const resposta = await fetch(SOUND_URL, {
         method: "POST",
-       headers: {
-            "Content-Type" : "aplication/json"
+        mode: "cors",
+        headers: {
+            "Content-Type" : "application/json",
        },
         body: novoEventoJSON
     }).then((response) => {
